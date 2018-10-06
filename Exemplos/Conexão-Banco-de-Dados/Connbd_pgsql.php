@@ -2,7 +2,7 @@
 	
 	echo "<h1>Teste BD usando pg_connect </h1>";
 	
-	$conn = pg_connect("host=localhost dbname=aulas user=postgre password=postgre");
+	$conn = pg_connect("host=localhost dbname=futxic user=postgre password=postgre");
 	$result = pg_query("SELECT * FROM aluno;");
 	
 	echo "<table>";

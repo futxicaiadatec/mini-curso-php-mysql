@@ -6,7 +6,7 @@
 
 	//PDO é uma biblioteca que fornece uma camada de abstração para operações com SGBD
 	//dessa forma, é possível alterar o SGBD sem alterar o código (apenas a string de conexão)
-	$conn = new PDO('mysql:host=localhost;dbname=aulas;charset=latin1', 'root', 'root'); //string de conexão referente ao MySQL
+	$conn = new PDO('mysql:host=localhost;dbname=futxic;charset=latin1', 'root', ''); //string de conexão referente ao MySQL
 	$result = $conn->query("SELECT * FROM aluno");
 
 	echo "<table>";

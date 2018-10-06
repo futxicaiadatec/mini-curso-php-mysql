@@ -5,8 +5,9 @@
 	
 	echo "<h1>Teste BD usando mysql_connect (descontinuada) </h1>";
 	
-	$conn = mysql_connect("localhost","root","root");
-	mysql_select_db("aulas"); //um dos motivos de ter sido descontinuada
+	$conn = mysql_connect("localhost","root","");
+	mysql_select_db("futxic"); //um dos motivos de ter sido descontinuada
+	
 	$result = mysql_query("SELECT * FROM aluno;"); //é que não é obrigatório utilizar 
 												  //a referência a conexão (no caso $conn) nas funções de query por exemplo
 	

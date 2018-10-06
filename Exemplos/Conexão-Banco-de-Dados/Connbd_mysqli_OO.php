@@ -4,9 +4,9 @@
 	
 	echo "<h1>Teste BD usando mysqli_connect Orientada a Objetos </h1>";
 	
-	$conn = new mysqli("localhost","root","root", "aulas");
+	$conn = new mysqli("localhost","root","","futxic");
 	
-	$result = $conn->query($conn,"SELECT * FROM aluno;");
+	$result = $conn->query("SELECT * FROM aluno;");
 	
 	echo "<table>";
 	while ($dados_aluno = $result->fetch_array(MYSQLI_ASSOC)) {
