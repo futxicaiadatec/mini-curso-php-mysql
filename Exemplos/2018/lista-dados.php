@@ -1,7 +1,7 @@
 <?php
 
 
-$con = mysqli_connect("localhost","root","");
+$con = mysqli_connect("localhost","root","root");
 
 mysqli_select_db($con,"futxic");
 
