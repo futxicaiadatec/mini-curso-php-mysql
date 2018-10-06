@@ -7,6 +7,55 @@
 	<body>
 		<?php
 		
+			$vetor = array();
+			$vetor[0] = 10;
+			$vetor[1] = 11;
+			$vetor[2] = 12;
+			
+			array_push($vetor, 13);
+			array_push($vetor, 14);
+			array_push($vetor, 16);
+			
+			$vetor['projeto'][0] = "Futxicaiada";
+			$vetor['projeto'][1] = "Secreto";
+			$vetor['mini-curso'] = "PHP e MyQL";			
+			
+			echo "<br />Quantidade de elementos: ".count($vetor);
+			echo "<br />Quantidade de elementos no projeto: "
+					.count($vetor['projeto']);
+			
+			/*for ($i=0;$i<count($vetor);$i++) {
+				echo "<br />".$vetor[$i];
+			}*/
+						
+			foreach ($vetor as $k => $item) {
+				if (is_array($item)) {
+					foreach($item as $k1 => $subitem) {
+			echo "<br />pos: ".$k." ".$k1." ".$subitem;
+					}
+				}
+				else {
+					echo "<br />pos: ".$k." valor: ".$item;
+				}
+			}
+			
+			
+			
+			
+			
+			
+			$vetor1 = array(0 => 10, 1 => 11, 2 => 12);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		$a = null;
 		$a = "11";
 		
 		$b = false;
