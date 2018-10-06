@@ -39,7 +39,12 @@
 				}
 			}
 			
+			echo "<br />";
+			//print_r($vetor);
+			print_r($_SERVER);
+			//var_dump();
 			
+		echo "<br />Método de requisição: ".$_SERVER['REQUEST_METHOD'];
 			
 			
 			
