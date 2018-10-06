@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário em PHP</title>
+</head>
+	<body>
+		<form 
+action="recebe-dados.php?acao=cadastrar&objeto=aluno"
+			method="POST">
+			Nome: 
+			<input type="text" name="txt-nome" />
+			<br />
+			Rga: 
+			<input type="text" name="txt-rga" />
+			<br />
+	<select name="cidade">
+		<option value="CBA">Cuiabá</option>
+		<option value="VG">Várzea Grande</option>
+		<option value="PKM">Poconé</option>
+	</select>
+	<br />
+	Interesses:
+	<br /><input 
+		type="checkbox" value="PHP" name="interesses[]" /> PHP
+	<br /><input 
+		type="checkbox" value="JAVA" name="interesses[]" /> JAVA
+	<br /><input 
+		type="checkbox" value="C++" name="interesses[]" /> C++
+<br/>	
+			<button>Enviar Dados</button>
+		</form>
+	</body>
+</html>
