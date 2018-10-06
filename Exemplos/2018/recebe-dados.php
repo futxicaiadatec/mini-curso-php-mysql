@@ -1,12 +1,15 @@
-
-
-
-
 <?php
+
+	//json_decode($json);
+	
+	//$json_retorno = json_encode();
 
 	//print_r($_POST);
 	//$_REQUEST
 
+	if (!isset($_POST['txt-nome'])) {
+	}
+	
 	$nome = $_POST['txt-nome'];
 	$rga  = $_POST['txt-rga'];
 	
