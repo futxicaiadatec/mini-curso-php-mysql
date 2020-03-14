@@ -1,5 +1,7 @@
 <?php
 
+	error_reporting(E_ALL);
+
 	//$_SERVER
 	//$_REQUEST
 
@@ -8,10 +10,9 @@ echo "<br />Raça: ".$_REQUEST['raca'];
 
 $nome = $_REQUEST['nome'];
 $raca = $_REQUEST['raca'];	
-	//INSERT INTO gatinhos (nome,raca)
-	//VALUES ('Berinjela','Vira Lata');
 	
-$con = mysqli_connect("localhost", "root", "");
+$con = mysqli_connect("localhost", 
+						"root", "");
 mysqli_select_db($con, "futxicaiada");
 
 $str_insert = 
@@ -20,8 +21,12 @@ $str_insert =
 
 mysqli_query($con,$str_insert);
 
+echo "<br />Erro mysql: ".mysqli_error($con);
+
 echo "<p>
 		Gatinho inserido com sucesso!!!
 	 </p>";
+	 
+mysqli_close($con);
 
 ?>
