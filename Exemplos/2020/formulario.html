@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro Formulário</title>
+	<style>
+		form br {
+			margin-top: 4px;
+			margin-bottom: 4px;
+			display: block;
+			content: "";
+		}
+		
+		input {
+			background-color: #dcf5f4;
+			color: #4f4f4f;
+			border: 0.3px solid #4f4f4f;
+			border-radius: 3px;
+			box-shadow: inset 0px 0px 4px #4f4f4f;
+		}
+		
+	</style>
+</head>
+	<body>
+		<h1>Cadastrar Gatinho</h1>
+		<form action="recebe-dados.php" 
+				method="POST">
+			Nome: 
+				<input type="texto" 
+						name="nome"> 
+			<br class="espaco-grande" />
+			Raça:
+				<input 
+					type="text" 
+					name="raca" />
+			<br />
+			<button>Cadastrar</button>
+		</form>
+	</body>
+</html>
